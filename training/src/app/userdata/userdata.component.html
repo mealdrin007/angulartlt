@@ -1,0 +1,26 @@
+<h3>Add/Edit User</h3>
+<form action="" class="form-control" #heroform="ngForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <label for="" class="form-control">User ID:</label><br>
+                <label for="" class="form-control">User Name:</label><br>
+                <label for="" class="form-control">Email:</label><br>
+                <label class="form-control" for="">Status:</label><br>
+                <button style="margin-left:10px;" *ngIf="id==':id'" (click)="add()" class="btn btn-secondary">Save</button>
+            </div>
+            <div class="col-4">
+                <input class="form-control" [(ngModel)]="id1" type="text" name="id" id=""><br>
+                <input type="text" [(ngModel)]="name1" name="name" class="form-control"><br>
+                <input type="text" [(ngModel)]="email1" name="email" id="" class="form-control"><br>
+                <select (click)="backycolor()" id="cityname" [style.color]="color" class="form-control"
+                    [(ngModel)]="status1" name="status" id="exampleInputEmail1">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select><br>
+                <button class="btn btn-secondary" *ngIf="id!=':id'" (click)="update()">Save</button>&nbsp;
+                <button class="btn btn-secondary" (click)="heroform.resetForm()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="mt-5">
+                <form class="form-control" action="" style="background-color: skyblue;padding: 100px;">
+                    <label for="">UserName:</label>
+                    <input id="user" type="text" name="user" [(ngModel)]="user"><br>
+                    <label for="">Password:</label>
+                    <input id="pass" name="pass" type="password" [(ngModel)]="pass">
+                    <button (click)="signin()" style="margin-left:75px;margin-top: 20px;" class="btn btn-warning">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
